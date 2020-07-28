@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="javascript" type="text/javascript" src="inkop.js"></script>
+    <link rel="stylesheet" href="inkop.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="totalhub">
+      <div id="meny"><a href="../matkartan.html">_____<br>_____<br>_____<br></a></div>
+      <div id="hubtitle">INKÖPSLISTA</div>
+      <div id="skapany" align="center"><button onclick="newList()">Skapa ny lista</button></div>
+    </div>
+    <div id="listhub"></div>
+    <div id="varahub">
+      <div id="varatitle"></div>
+      <div id="varasearch">
+        <div id="searchtitle">
+          <p>SÖK VARA</p>
+        </div>
+        <div id="searchbar">
+          <ul id="searchul"></ul>
+          <input type="text" id="searchinput" value="" autocomplete="off" />
+        </div>
+        <img src="../bilder/fglas.jpg" id="searchimg" />
+      </div>
+      <div id="varax"><button onclick="hideVara()">X</button></div>
+      <div id="varalisthub"></div>
+      <div id="tillkassan"><button onclick="goToCart()">Gå till kassan</button></div>
+      <div id="totvaraprice">TOTALT: 0 kr</div>
+  </div>
+  </body>
+</html>

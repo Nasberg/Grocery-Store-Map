@@ -1,0 +1,17 @@
+listco {
+  list0 : {
+    title: "",
+    items: {
+      vara0: {
+        title: "",
+        amount: 0
+      }
+    }
+  }
+}
+
+addnum = listnum
+section
+vara
+
+secs["sec" + section].desc[vara]

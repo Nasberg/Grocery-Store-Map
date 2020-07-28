@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="hittaVara.js"
+    ></script>
+    <link rel="stylesheet" href="hittaVara.css" />
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <div id="totalhub">
+      <div id="meny">
+        <a href="../../matkartan.html">_____<br />_____<br />_____<br /></a>
+      </div>
+      <div id="sok">
+        <div id="sokp">
+          <p>SÖK VARA</p>
+        </div>
+        <input
+          type="text"
+          id="vara"
+          value=""
+          autocomplete="off"
+          onkeyup="searchVara()"
+          onclick="searchVara()"
+        />
+        <img src="../../bilder/fglas.jpg" id="fglas" />
+      </div>
+      <div id="sectable" align="center">
+        <ul id="secul"></ul>
+        <div id="ulx"><button onclick="hideUl()">X</button></div>
+      </div>
+    </div>
+    <div id="secbox">
+      <div id="secchoice">
+        <div id="secx" align="center">
+          <button onclick="hideSec()">X</button>
+        </div>
+        <div id="sectitle"></div>
+        <div id="secloca"></div>
+        <div id="secadd" align="center">
+          <button>LÄGG TILL VARA</button>
+        </div>
+        <div id="secprice"></div>
+        <div id="secnum">
+          <input type="number" min="1" id="numbox" value="1" />
+        </div>
+        <div id="totprice"></div>
+        <div id="picbox">
+          <img id="secpic" src="" />
+        </div>
+      </div>
+    </div>
+    <img src="../../bilder/planritning.png" id="pn" />
+    <button class="secs" id="sec0" onclick="chooseSec(0)"></button>
+    <button class="secs" id="sec1" onclick="chooseSec(1)"></button>
+    <button class="secs" id="sec2" onclick="chooseSec(2)"></button>
+    <button class="secs" id="sec3" onclick="chooseSec(3)"></button>
+    <button class="secs" id="sec4" onclick="chooseSec(4)"></button>
+  </body>
+</html>

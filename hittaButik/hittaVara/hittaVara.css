@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#totalhub {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  height: 156px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+#totalhub a {
+  color: white;
+  grid-area: 1/1/2/2;
+  text-decoration: none;
+}
+
+#totalhub a:hover {
+  background-color: white;
+  color: black;
+}
+
+#meny {
+}
+
+#sok {
+  grid-area: 1/2/2/5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  line-height: 156px;
+}
+
+#sokp {
+  grid-column: 1/2;
+  font-size: 30px;
+  line-height: 51px;
+}
+
+#sokp p {
+  margin-top: 51px;
+  height: 51px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+#vara {
+  grid-column: 2/3;
+  margin-top: 50px;
+  width: 250px;
+  height: 51px;
+  font-size: 25px;
+  line-height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fglas {
+  grid-column: 3/4;
+  margin-top: 50px;
+  width: 55px;
+}
+
+#secbox {
+  position: absolute;
+  display: none;
+  left: 125px;
+  width: 605px;
+  z-index: 1;
+  background-color: cyan;
+  border: 2px solid black;
+}
+
+#secchoice {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#secx {
+  grid-area: 1/20/2/21;
+}
+
+#secx button {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+}
+
+#sectitle {
+  grid-area: 1/2/2/16;
+  font-size: 40px;
+  padding-top: 5px;
+}
+
+#secloca {
+  grid-area: 1/16/2/19;
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+#secadd {
+  grid-area: 2/9/3/21;
+  padding-top: 5px;
+}
+
+#secadd button {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#secprice {
+  grid-area: 3/16/5/21;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 35px;
+  font-size: 30px;
+}
+
+#secnum {
+  grid-area: 3/13/5/16;
+}
+
+#numbox {
+  float: right;
+  margin-top: 20px;
+  width: 75px;
+  height: 50px;
+  font-size: 30px;
+  text-align: right;
+}
+
+#totprice {
+  grid-area: 3/9/5/13;
+  padding-right: 5px;
+  padding-top: 42px;
+  text-align: right;
+  font-size: 20px;
+}
+
+#sectable {
+  grid-column: 5/9;
+  display: grid;
+}
+
+#secul {
+  grid-column: 1/20;
+  position: relative;
+  text-align: center;
+  list-style: none;
+  line-height: 156px;
+  font-size: 50px;
+  z-index: 1;
+}
+
+#secul li {
+  width: 736px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid black;
+}
+
+#secul li button {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 30px;
+  border: none;
+}
+
+#ulx {
+  grid-column: 20/21;
+  display: none;
+}
+
+#ulx button {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  z-index: 1;
+}
+
+.st {
+  float: left;
+  margin-left: 5px;
+}
+
+.slo {
+  float: right;
+  margin-left: 40px;
+  width: 125px;
+}
+
+.sp {
+  float: right;
+  margin-left: 40px;
+  width: 125px;
+  text-align: right;
+}
+
+.spic {
+  float: right;
+  height: 50px;
+}
+
+#picbox {
+  grid-area: 2/1/4/5;
+}
+
+#secpic {
+  height: 95px;;
+}
+
+#pn {
+  width: 100%;
+}
+
+.secs {
+  position: absolute;
+  background-color: lightgreen;
+  opacity: .5;
+  border: none;
+}
+
+.secs:hover {
+  background-color: black;
+  opacity: .5;
+}
+
+#sec0 {
+  left: 69px;
+  top: 279px;
+  width: 172px;
+  height: 127px;
+}
+
+#sec1 {
+  left: 247px;
+  top: 278px;
+  width: 65px;
+  height: 128px;
+}
+
+#sec2 {
+  left: 84px;
+  top: 455px;
+  width: 13px;
+  height: 115px;
+}
+
+#sec3 {
+  left: 97px;
+  top: 455px;
+  width: 14px;
+  height: 115px;
+}
+
+#sec4 {
+  left: 118px;
+  top: 455px;
+  width: 14px;
+  height: 115px;
+}

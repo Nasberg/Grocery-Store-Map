@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#totalhub {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+#meny {
+  grid-area: 1/1/3/2;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#hubtitle {
+  grid-area: 1/2/3/4;
+  line-height: 100px;
+  font-size: 50px;
+}
+
+#skapany {
+  grid-area: 1/8/3/9;
+}
+
+#skapany button {
+  transform: translate(0, 50%);
+  width: 170px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#listhub {
+  position: absolute;
+  left: 10%;
+  top: 110px;
+  width: 80%;
+}
+
+.listdivs {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-row: 1fr;
+  margin-bottom: 10px;
+  height: 100px;
+  background-color: cyan;
+  line-height: 100px;
+  border: 1px solid black;
+}
+
+.listt {
+  grid-column: 1/9;
+  margin-left: 10px;
+  font-size: 35px;
+}
+
+.bytdiv {
+  grid-column: 9/12;
+}
+
+.bytbtn, .addbtn {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.newadd {
+  grid-column: 12/15;
+}
+
+.listx {
+  grid-column: 20/21;
+}
+
+.listbtn, #varax button, .addtox button {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#varahub {
+  display: none;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  position: absolute;
+  left: 5%;
+  top: 150px;
+  width: 90%;
+  height: 550px;
+  background-color: cyan;
+  z-index: 1;
+  border: 4px solid black;
+}
+
+#varatitle {
+  grid-area: 1/1/3/9;
+  margin-left: 10px;
+  line-height: 70px;
+  font-size: 30px;
+}
+
+#varax {
+  grid-area: 1/20/3/21;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#varasearch {
+  grid-area: 3/1/5/9;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-left: 10px;
+  background-color: white;
+  border: 3px solid black;
+}
+
+#searchtitle {
+  grid-column: 1/3;
+}
+
+#searchtitle p {
+  position: absolute;
+  left: 31px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  background-color: white;
+  font-size: 25px;
+  border: 1px solid black;
+}
+
+#searchbar {
+  grid-column: 3/7;
+}
+
+#searchul {
+  position: absolute;
+  top: 137px;
+  text-align: center;
+  list-style: none;
+  line-height: 70px;
+}
+
+#searchul li {
+  width: 311px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+#searchul li button {
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+}
+
+.st {
+  float: left;
+  margin-left: 5px;
+}
+
+.slo {
+  float: right;
+  margin-left: 20px;
+  width: 50px;
+}
+
+.sp {
+  float: right;
+  margin-left: 5px;
+  width: 70px;
+  text-align: right;
+}
+
+.spic {
+  float: right;
+  height: 40px;
+}
+
+
+#searchinput {
+  position: absolute;
+  margin-top: 10px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#searchimg {
+  grid-column: 7/8;
+  margin-left: 7px;
+  margin-top: 11px;
+  height: 53px;
+  z-index: 1;
+}
+
+#varalisthub {
+  grid-area: 5/1/16/16;
+}
+
+.addtodiv {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  margin-left: 5%;
+  margin-top: 10px;
+  width: 90%;
+  height: 60px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.titlediv {
+  grid-column: 1/8;
+  margin-left: 10px;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+.addtox {
+  grid-column: 20/21;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.imgdiv {
+  grid-column: 8/10;
+}
+
+.addtoimg {
+  margin-top: 1px;
+  height: 58px;
+}
+
+.addtoprice {
+  grid-column: 10/12;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.addtoinputdiv {
+  grid-column: 12/14;
+}
+
+.addtoinput {
+  width: 50px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.addtototprice {
+  grid-column: 14/20;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+#tillkassan {
+  grid-area: 12/18/14/21;
+}
+
+#tillkassan button {
+  margin-left: 10%;
+  margin-top: 10px;
+  width: 80%;
+  height: 70%;
+  font-size: 22px;
+}
+
+#totvaraprice {
+  grid-area: 14/17/16/21;
+  margin-left: 10px;
+  line-height: 70px;
+  font-size: 25px;
+  text-decoration: underline;
+}
